@@ -11,6 +11,8 @@ import job from './routes/job'
 import dicussion from './routes/dicussion'
 import event from './routes/event'
 import message from './routes/message'
+import freeRoute from './routes/free'
+import helpRoute from './routes/help'
 import morgan from 'morgan'
 import cors from 'cors'
 // import bodyParser from 'body-parser'
@@ -49,6 +51,9 @@ app.use('/api/dicussion', dicussion)
 app.use('/api/event', event)
 app.use('/api/message', message)
 app.use('/api/connect', connectRoute);
+app.use('/api/free', freeRoute);
+app.use('/api/help', helpRoute);
+
 // Error handling
 app.use(notFound)
 app.use(errorHandlerMiddleware)

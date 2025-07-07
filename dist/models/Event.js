@@ -38,5 +38,6 @@ const EventSchema = new mongoose_1.Schema({
     },
     zoomLink: { type: String },
     postedAt: { type: Date, default: Date.now },
+    postedBy: { type: String, required: true },
 });
 exports.default = mongoose_1.default.model('Event', EventSchema);

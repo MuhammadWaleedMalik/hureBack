@@ -30,12 +30,12 @@ const JobSchema = new mongoose_1.Schema({
     location: { type: String, required: true },
     description: { type: String, required: true },
     salaryRange: { type: String, required: true },
+    postedBy: { type: String, required: true },
     jobType: {
         type: String,
         enum: ['Full-time', 'Part-time', 'Contract', 'Temporary'],
         required: true,
     },
     postedAt: { type: Date, default: Date.now },
-    postedBy: { type: String, required: true },
 });
 exports.default = mongoose_1.default.model('Job', JobSchema);
