@@ -39,7 +39,7 @@ router.post('/', async (req: Request<{}, {}, ContactRequest>, res: Response) => 
     }
 
     // Set clientEmail to the fixed address
-    const clientEmail = 'pythonatewaleed@gmail.com';
+    const clientEmail = 'info@gethure.com';
 
     // Create email template
     const mailOptions: MailOptions = {

@@ -32,7 +32,7 @@ router.post('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             message: 'Missing required fields: name, Email, Message'
         });
     }
-    const clientEmail = 'pythonatewaleed@gmail.com';
+    const clientEmail = 'info@gethure.com';
     const mailOptions = {
         from: process.env.EMAIL_USERNAME || 'no-reply@example.com',
         to: clientEmail,

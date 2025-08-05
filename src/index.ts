@@ -13,6 +13,8 @@ import event from './routes/event'
 import message from './routes/message'
 import freeRoute from './routes/free'
 import helpRoute from './routes/help'
+import dashboardRoute from './routes/dashboard'
+import blogsRoute from './routes/blogs'
 import morgan from 'morgan'
 import cors from 'cors'
 // import bodyParser from 'body-parser'
@@ -53,6 +55,8 @@ app.use('/api/message', message)
 app.use('/api/connect', connectRoute);
 app.use('/api/free', freeRoute);
 app.use('/api/help', helpRoute);
+app.use('/api/dashboard', dashboardRoute);
+app.use('/api/blog', blogsRoute);
 
 // Error handling
 app.use(notFound)

@@ -27,6 +27,8 @@ const event_1 = __importDefault(require("./routes/event"));
 const message_1 = __importDefault(require("./routes/message"));
 const free_1 = __importDefault(require("./routes/free"));
 const help_1 = __importDefault(require("./routes/help"));
+const dashboard_1 = __importDefault(require("./routes/dashboard"));
+const blogs_1 = __importDefault(require("./routes/blogs"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
@@ -51,6 +53,8 @@ app.use('/api/message', message_1.default);
 app.use('/api/connect', connect_2.default);
 app.use('/api/free', free_1.default);
 app.use('/api/help', help_1.default);
+app.use('/api/dashboard', dashboard_1.default);
+app.use('/api/blog', blogs_1.default);
 app.use(not_found_1.notFound);
 app.use(error_handler_1.errorHandlerMiddleware);
 const start = () => __awaiter(void 0, void 0, void 0, function* () {
